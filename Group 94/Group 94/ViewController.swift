@@ -30,6 +30,11 @@ class ViewController: UIViewController {
         let myCoala = Coala(val1: 12, val2: 500)
 //        let mySecondCoala = Coala(age: 10)
 
+        loadTrendingMovies()
+
+    }
+    
+    func loadTrendingMovies() {
         let url = "https://api.themoviedb.org/3/trending/movie/week?api_key=96cfbe0ba15c4721bca8030e8e32becb"
         
         AF.request(url, method: .get, parameters: nil).responseJSON { recievedData in
@@ -41,24 +46,9 @@ class ViewController: UIViewController {
                 }
             }
         }
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-//
-//
-//        AF.request(APIRouter.testGet).responseDecodable(decoder: jsonDecoder) { (response: DataResponse<[ObjectA], AFError>) in
-//                if let data = response.data {
-//                    print(String(data: data, encoding: .utf8)!)
-//                }
-//        }
     }
+    
+    
     
     let myChiken = Chicken(name: "Name")
     
