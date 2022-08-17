@@ -33,6 +33,13 @@ class ViewController: UIViewController {
         loadTrendingMovies()
 
         print("Hello world!")
+        print("Hello world!")
+        print("Hello world!")
+        print("Hello world!")
+        print("Hello world!")
+        print("Hello world!")
+        print("Hello world!")
+        
     }
     
     func loadTrendingMovies() {
